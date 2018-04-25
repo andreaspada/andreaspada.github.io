@@ -6,6 +6,12 @@
 <html class='no-js' lang='en'>
 	<!--<![endif]-->
 	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta charset='utf-8' />
 		<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
 		<title>Andrea Spada :: Liuteria d'Autore</title>
@@ -38,18 +44,26 @@
 			</ul>
 		</nav>
 
+		<nav class="lang-switcher">
+			<ul>
+				<li><button id="en" class="lang">English</button></li>
+				<li><button id="it" class="lang">Italiano</button></li>
+				<li><button id="pt" class="lang">Portugues</button></li>
+			</ul>
+		</nav>
+
 		<!-- Switch to full screen -->
 		<button class="full-screen" onclick="$(document).toggleFullScreen()"></button>
 
 		<!-- Site Logo -->
-		<div id="logo">Andrea Spada</div>
+		<div id="logo">Andrea Spada <div class="logo-accent">Liuteria d'Autore</div></div>
 
 		<!-- Main Navigation -->
 		<nav class="main-nav">
 			<ul>
 				<li><a href="#home" class="active">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a href="#about" key="menu-about" class="tr">About</a></li>
+				<li><a href="#contact" key="menu-contact" class="tr">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -59,28 +73,30 @@
 
 		<!-- Home Page -->
 		<section class="content show" id="home">
-			<h1>Welcome</h1>
-			<h5>My new site is coming soon!</h5>
-			<p>As I'm very busy quite now, making and restoring some very special instrument, I have to postpone the overhauling of the new site. Till there, you can safely browse my legacy website, <a href="http://old.andreaspada.com">old.andreaspada.com</a>. It's not updated by a while, so you can easily miss something if you are searching for information on last news in regard my work.<br>Hovewer, you'll find precious insight about my workmanship and information about many model I offer, as well as the already very known <b>Contrabassettos</b>, a special kind of instrument I invented and developed during the last ten years, which is devoted to the travelling double bassist.</p>
-			<p><a href="#about">More info &#187;</a></p>
+			<h1 key="welcome" class="tr">Welcome</h1>
+			<h5 key="welcome-sub" class="tr">My new site is coming soon!</h5>
+			<p key="welcome-txt" class="tr">I'm a maker and restorer of fine string instruments. I'm quite specialised in Double Basses, however I work with the whole strings family, from Violins to Viols.</p>
+			<p><a href="#about" key="more" class="tr">Tell me more</a>...</p>
 		</section>
 
 		<!-- About Page -->
 		<section class="content hide" id="about">
-			<h1>About</h1>
-			<h5>Here's a little about what we're up to.</h5>
-			<p>If you searching for someone who restore and make fien string instruments, you are in the right place. I'm a maker and restorer, mainly focused in Double Basses, however I work with the whole strings family, from Violins to Viols.</p>
-			<!-- <p><a href="#">Follow our updates on Twitter</a></p> -->
+			<h1 key="about" class="tr">About</h1>
+			<h5 key="about-sub" class="tr">Here's a little about what I'm up to.</h5>
+			<p key="about-txt" class="tr">As I`m very busy quite now, I had to postpone the overhauling of the new site. Till there, you can safely browse my legacy website, <a href="http://old.andreaspada.com">old.andreaspada.com</a>.	It`s not updated by a while, so you can easily miss something if you are searching for information on latest news in regard my work.
+				<br>Hovewer, you`ll find precious insight about my workmanship and information about many of the model I offer.
+				<br>You can always stay uptodate with my work on <a href="https://www.facebook.com/liuteriadautore/">facebook</a><br>
+				<br>Beside basses, cellos and alike, you`ll find as well information about my <a href="https://www.facebook.com/contrabassetto/"><b>Contrabassettos</b></a>, a special kind of instrument I invented and developed during the last ten years, which are devoted to the travelling double bassist.<br>
+				<br>I`m glade you visited my site, so if you have some question, you can contact me though some social links - upper right corner... - or using my contact information, in the <a href="#contact">contact</a> page. Thank you!</p>
 		</section>
 
 		<!-- Contact Page -->
 		<section class="content hide" id="contact">
-			<h1>Contact</h1>
-			<h5>Get in touch.</h5>
-			<p>Email: <a href="#">info@andreaspada.com</a><br />
-				Phone: +55 21 987557070<br /></p>
-			<p>Rua Felicio dos Santos, 9 / Casa 2<br />
-				Rio de Janeiro, Brazil</p>
+			<h1 key="contact" class="tr">Contact</h1>
+			<h5 key="contact-sub" class="tr">Get in touch.</h5>
+			<p><a href="mailto:xinxfxo@anxdxrexasxpaxda.xcom"
+    onmouseover="this.href=this.href.replace(/x/g,'');"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> email</a><br>
+		<i class="fa fa-phone fa-2x" aria-hidden="true"></i> +55 21 987557070<br /></p>
 		</section>
 
 		<!-- Background Slides -->
@@ -114,6 +130,10 @@
 		<script src="js/jquery.fullscreen.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.ba-hashchange.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<!-- fontawesome -->
+		<script src="https://use.fontawesome.com/24e236852d.js"></script>
+		<!-- translations -->
+		<script src="js/translate.js"></script>
 
 		<script type="text/javascript" charset="utf-8">
 			$(function(){
